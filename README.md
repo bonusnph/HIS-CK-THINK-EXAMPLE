@@ -3,10 +3,10 @@
 Workshop สำหรับสมัครงานตำแหน่ง Node.js Developer (Backend)
 
 ## Endpoints
-[GET] /api-docs
-[GET] /api/oauth/google
-[GET] /api/v1/users
-[POST] /api/v1/users
+- [GET] /api-docs
+- [GET] /api/oauth/google
+- [GET] /api/v1/users
+- [POST] /api/v1/users
 
 ## Dependency
 - "body-parser": "^1.20.0"
