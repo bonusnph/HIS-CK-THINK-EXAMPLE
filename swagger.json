@@ -1,0 +1,60 @@
+{
+    "swagger": "2.0",
+    "info": {},
+    "host": "localhost:80",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "HIS-CK-THINK-EXAMPLE",
+            "description": "APIs for HIS CK-THINK"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/api/v1/users": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get All Users",
+                "produces": [
+                    "application/json"
+                ]
+            },
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a User",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "firstName",
+                        "in": "formData",
+                        "description": "Firstname",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lastName",
+                        "in": "formData",
+                        "description": "Lastname",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "description": "Email",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    }
+}
